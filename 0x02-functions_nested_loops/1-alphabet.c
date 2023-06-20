@@ -3,16 +3,13 @@
 
 	/**
 	 * print_alphabet - print all alphabet in lowercase
-	 *  function that prints the alphabet, in lowercase
+	 *
+	 *  A function that prints the alphabet, in lowercase
 	 */
 
 
 	void print_alphabet(void)
 	{
-
-		/**
-         *  function that prints the alphabet, in lowercase
-         */
 		char letter;
 
 
