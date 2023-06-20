@@ -9,6 +9,10 @@
 
 	void print_alphabet(void)
 	{
+
+		/**
+         *  function that prints the alphabet, in lowercase
+         */
 		char letter;
 
 
