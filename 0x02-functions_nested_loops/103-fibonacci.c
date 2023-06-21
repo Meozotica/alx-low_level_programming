@@ -2,7 +2,7 @@
 
 
 	/**
-	 * main - finds and prints the sum of the even-valued terms
+	 * main - program that finds and prints the sum of the even-valued terms, followed by a new line.
 	 * followed by a new line
 	 * Return: Always 0 (Success)
 	 */
@@ -28,7 +28,7 @@
 			k = next;
 		}
 
-
+i
 		printf("%lu\n", sum);
 
 
