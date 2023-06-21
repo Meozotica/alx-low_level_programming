@@ -1,12 +1,9 @@
 #include "main.h"
 	/**
-	 * main - print _putchar
-	 * is written by meozotica
-	 *_putchar should be included in your header file called
-	 *main.c files at compilation
-	 *Write a program that prints _putchar, followed by a new line.
-	 * Return: 0  on succesis
-	 */
+ * main - Entry Block
+  *Description: prints _putchar followed by a new line
+ * Return: 0
+ */
 
 
 	int main(void)
