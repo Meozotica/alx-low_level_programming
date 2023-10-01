@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * Compare strings
- *  pointer to string params
- *  pointer to string params
- * return: 0
+ * wildcmp - Compare strings
+ * @s1: pointer to string params
+ * @s2: pointer to string params
+ * Return: 0
  */
 
 int wildcmp(char *s1, char *s2)
@@ -28,4 +28,4 @@ int wildcmp(char *s1, char *s2)
 	}
 	return (0);
 }
-i
+
