@@ -1,28 +1,43 @@
-#include "holberton.h"
-#include <stdio.h>
+#include "main.h"
 #include <stdlib.h>
-
 /**
- * _strdup - Entry point
- *@str: string we need to duplicate
- * Return: a pointer to the duplicated string or NULL
+ * str_concat - get ends of input and add together for size
+ * @s1: input one to concat
+ * @s2: input two to concat
+ * Return: concat of s1 and s2
  */
-char *_strdup(char *str)
+char *str_concat(char *s1, char *s2)
 {
-	char *strnew = NULL;
-	unsigned int i;
-	int n;
+	char *conct;
+	int i, ci;
 
-	if (str == NULL)
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
+	i = ci = 0;
+	while (s1[i] != '\0')
+		i++;
+	while (s2[ci] != '\0')
+		ci++;
+	conct = malloc(sizeof(char) * (i + ci + 1));
+
+	if (conct == NULL)
 		return (NULL);
-	for (n = 0; str[n] != '\0'; n++)
-		;
-	strnew = (char *)malloc(n + 1 * sizeof(char));
-	if (strnew != NULL)
+	i = ci = 0;
+	while (s1[i] != '\0')
 	{
-		for (i = 0; str[i] != '\0'; i++)
-			strnew[i] = str[i];
-	} else
+		conct[i] = s1[i];
+		i++;
+	}
+
+	while (s2[ci] != '\0')
 	{
-		return (NULL);
+		conct[i] = s2[ci];
+		i++, ci++;
+	}
+	conct[i] = '\0';
+	return (conct);
+}
 	}
